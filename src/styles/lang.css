@@ -1,0 +1,130 @@
+/* ---------------------------------------------------------------------------
+   PAKISTAN — Beyond Imagination · Language switcher + RTL / Urdu (Nastaliq)
+--------------------------------------------------------------------------- */
+
+/* ---------- Language switcher (nav) ---------- */
+.lang-switch {
+  display: inline-flex;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  margin-inline-start: 0.75rem;
+}
+
+.lang-switch button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--fg-soft);
+  font: 600 var(--text-xs) / 1 var(--font-body);
+  letter-spacing: 0.08em;
+  padding: 0.42em 0.85em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color var(--t-fast) var(--ease-out), background var(--t-fast) var(--ease-out);
+}
+
+.lang-switch button:hover { color: var(--fg); }
+
+.lang-switch button.is-active {
+  color: var(--ink);
+  background: var(--accent);
+}
+
+/* Keep the Urdu label in Nastaliq even while the page is LTR */
+.lang-switch button[data-lang-btn="ur"] {
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-weight: 600;
+  line-height: 1.75;
+  letter-spacing: 0;
+  padding-top: 0.12em;
+  padding-bottom: 0.2em;
+}
+
+@media (max-width: 960px) {
+  .nav__lang { margin-block-start: 0.6rem; }
+}
+
+/* ---------- RTL layout fixes ---------- */
+/* Flip the nav underline sweep that is hard-coded left→right in LTR. */
+[dir="rtl"] .nav__menu a::after {
+  left: auto;
+  right: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--t-med) var(--ease-expo);
+}
+
+[dir="rtl"] .nav__menu a[aria-current],
+[dir="rtl"] .nav__menu a:hover::after { transform: scaleX(1); }
+
+/* ---------- Urdu typography: Noto Nastaliq ---------- */
+/* Nastaliq hangs descenders deep; needs open line-height, zero letter-spacing
+   and no uppercase transforms anywhere. */
+html[lang="ur"] {
+  --font-body: "Noto Nastaliq Urdu", serif;
+  --font-display: "Noto Nastaliq Urdu", serif;
+}
+
+html[lang="ur"] body,
+html[lang="ur"] p,
+html[lang="ur"] li,
+html[lang="ur"] dd,
+html[lang="ur"] blockquote {
+  line-height: 2.05;
+}
+
+html[lang="ur"] h1,
+html[lang="ur"] h2,
+html[lang="ur"] h3,
+html[lang="ur"] h4,
+html[lang="ur"] .hero__tagline,
+html[lang="ur"] .eyebrow,
+html[lang="ur"] .section__lead,
+html[lang="ur"] .stats__note,
+html[lang="ur"] .city-card__desc,
+html[lang="ur"] .city-card__kicker,
+html[lang="ur"] .landmark__desc,
+html[lang="ur"] .landmark__meta,
+html[lang="ur"] .dish__tag,
+html[lang="ur"] .culture-card__kicker,
+html[lang="ur"] .culture-card__note,
+html[lang="ur"] .regions__meta {
+  line-height: 1.9;
+}
+
+/* Latin-script display faces have tight tracking + uppercase styling that
+   would break Nastaliq — neutralise both. */
+html[lang="ur"] * {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+/* Nastaliq glyphs run visually smaller: scale base sizes up. */
+html[lang="ur"] body { font-size: 108%; }
+html[lang="ur"] .eyebrow { font-size: 1.02rem; }
+
+/* The latin "PAKISTAN" hero/brand display stays latin.
+   The reveal spans are inline-blocks that would flow right-to-left under
+   dir="rtl" and reverse the word — pin the title's base direction back. */
+html[lang="ur"] .hero__title,
+html[lang="ur"] .nav__brand > span {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.28em !important;
+  text-transform: uppercase !important;
+  line-height: 1.15;
+}
+
+html[lang="ur"] .hero__title,
+html[lang="ur"] .hero__title .tr {
+  direction: ltr;
+  text-align: right; /* hero copy is right-aligned in RTL — keep the title there too */
+}
+
+/* Word-by-word reveal spans: Nastaliq descenders clip inside inline-blocks —
+   give the split words breathing room. */
+html[lang="ur"] .tr,
+html[lang="ur"] .tr-inner { padding-block: 0.3em; }
+html[lang="ur"] .tr-word { display: inline-block; }

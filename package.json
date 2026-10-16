@@ -1,0 +1,16 @@
+{
+  "name": "pakistan-beyond-imagination",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PAKISTAN — Beyond Imagination. A premium editorial travel & culture experience.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "images": "node scripts/fetch-images.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

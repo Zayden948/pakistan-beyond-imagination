@@ -1,0 +1,87 @@
+/* ---------------------------------------------------------------------------
+   PAKISTAN — Beyond Imagination · Design tokens
+   Editorial cinematic system: warm dark surfaces, bone paper chapters,
+   Cormorant Garamond display over Montserrat. Gold & jade accents only.
+--------------------------------------------------------------------------- */
+:root {
+  /* Type */
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-xs: 0.72rem;
+  --text-sm: 0.82rem;
+  --text-base: 1rem;
+  --text-md: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
+  --text-lg: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem);
+  --text-xl: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem);
+  --text-2xl: clamp(2.2rem, 1.5rem + 3vw, 4rem);
+  --text-3xl: clamp(3rem, 1.8rem + 5.5vw, 6.5rem);
+
+  /* Surfaces (dark cinematic base) */
+  --ink: #0d0b09;
+  --ink-raised: #16120e;
+  --ink-card: #1b1712;
+  /* Paper chapter */
+  --paper: #f0e9db;
+  --paper-deep: #e7ddc9;
+  /* Ink */
+  --fg-on-dark: #f4eee4;
+  --fg-soft-on-dark: #beb3a2;
+  --fg-on-paper: #241e17;
+  --fg-soft-on-paper: #6a5f4f;
+  /* Accents */
+  --gold: #d4a259;
+  --gold-deep: #a97c34;
+  --jade: #2f6b54;
+
+  /* Lines */
+  --line-on-dark: rgba(244, 238, 228, 0.16);
+  --line-on-paper: rgba(36, 30, 23, 0.22);
+
+  /* Layout */
+  --container-max: 78rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-gap: clamp(6rem, 11vw, 11.5rem);
+  --radius-s: 4px;
+  --radius-m: 10px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 180ms;
+  --t-med: 300ms;
+  --t-slow: 620ms;
+
+  --shadow-card: 0 24px 60px -30px rgba(0, 0, 0, 0.55);
+  --shadow-lift: 0 12px 40px -18px rgba(0, 0, 0, 0.45);
+}
+
+/* Per-chapter palettes (progressive reveal strategy) -------------------- */
+[data-theme="dark"] {
+  --surface: var(--ink);
+  --surface-2: var(--ink-card);
+  --fg: var(--fg-on-dark);
+  --fg-soft: var(--fg-soft-on-dark);
+  --line: var(--line-on-dark);
+  --accent: var(--gold);
+  --grain-opacity: 0.05;
+}
+
+[data-theme="raised"] {
+  --surface: var(--ink-raised);
+  --surface-2: var(--ink-card);
+  --fg: var(--fg-on-dark);
+  --fg-soft: var(--fg-soft-on-dark);
+  --line: var(--line-on-dark);
+  --accent: var(--gold);
+  --grain-opacity: 0.05;
+}
+
+[data-theme="light"] {
+  --surface: var(--paper);
+  --surface-2: var(--paper-deep);
+  --fg: var(--fg-on-paper);
+  --fg-soft: var(--fg-soft-on-paper);
+  --line: var(--line-on-paper);
+  --accent: var(--gold-deep);
+  --grain-opacity: 0.035;
+}

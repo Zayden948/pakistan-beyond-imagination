@@ -1,0 +1,204 @@
+/* ---------------------------------------------------------------------------
+   Motion library (21st.dev-inspired, reduced-motion safe)
+   · Marquee strip        · Spotlight hover    · Tilt cards
+   · Word/char text reveal
+--------------------------------------------------------------------------- */
+
+/* Marquee --------------------------------------------------------------- */
+.marquee {
+  overflow: hidden;
+  background: var(--ink-raised);
+  border-block: 1px solid var(--line-on-dark);
+  padding-block: 1.1rem;
+}
+.marquee__track {
+  display: flex;
+  width: max-content;
+  gap: 3rem;
+  align-items: center;
+  animation: marquee 42s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee__track { animation-play-state: paused; }
+.marquee__track span {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--fg-soft-on-dark);
+  white-space: nowrap;
+}
+.marquee__track i {
+  color: var(--gold);
+  font-style: normal;
+  font-size: 0.8rem;
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+/* Spotlight hover light -------------------------------------------------- */
+.spotlight { position: relative; }
+.spotlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 320ms var(--ease-out);
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(212, 162, 89, 0.16),
+    transparent 65%
+  );
+}
+.spotlight.is-lit::after { opacity: 1; }
+
+/* Tilt cards -------------------------------------------------------------- */
+.tilt { transform-style: preserve-3d; transition: transform 180ms var(--ease-out); }
+.tilt::after { content: none; } /* no spotlight glow on tilt-only cards */
+
+/* Text reveal ------------------------------------------------------------- */
+.tr-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.08em;   /* keep descenders during mask */
+  margin-bottom: -0.08em;
+}
+.tr-inner {
+  display: inline-block;
+  transform: translateY(112%);
+  transition: transform 700ms var(--ease-out);
+  transition-delay: calc(var(--wi, 0) * 55ms);
+}
+.is-visible .tr-inner { transform: translateY(0); }
+
+/* Hero character stagger */
+.js .hero__title .tr-inner {
+  transform: none;
+  opacity: 0;
+  transition: none;
+}
+.js .hero__title.is-visible .tr-inner {
+  opacity: 1;
+  animation: charRise 850ms var(--ease-out) both;
+  animation-delay: calc(280ms + var(--wi, 0) * 42ms);
+}
+@keyframes charRise {
+  from { opacity: 0; transform: translateY(0.55em) rotate(2deg); }
+  to { opacity: 1; transform: translateY(0) rotate(0); }
+}
+
+/* Reduced motion: marquees freeze, reveals render final state ------------ */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track { animation: none; }
+  .tr-inner { transition: none; transform: none; opacity: 1; }
+  .js .hero__title .tr-inner { opacity: 1; animation: none; }
+}
+
+/* ==========================================================================
+   TRANSITIONS  (21st.dev signature moves)
+   · Image mask reveal   · Hover lift + zoom   · Button shine sweep
+   · Underline sweep     · Chip hover
+   ========================================================================== */
+
+/* Image mask reveal — clip wipe + zoom on the IMG itself (the observed
+   wrapper keeps its real geometry, so IntersectionObserver still fires) ---- */
+.js [data-reveal-image] img {
+  clip-path: inset(0 0 100% 0);
+  transform: scale(1.14);
+  transition:
+    clip-path 1100ms var(--ease-expo) var(--d, 0s),
+    transform 1500ms var(--ease-expo) var(--d, 0s);
+  will-change: clip-path, transform;
+}
+.js [data-reveal-image].is-visible img {
+  clip-path: inset(0 0 0 0);
+  transform: scale(1);
+}
+
+/* Hover: image zoom inside every media frame ------------------------------- */
+.city-card__media img,
+.landmark__media img,
+.timeline__media img,
+.regions__media img,
+.wonder img,
+.discover__media img {
+  transition: transform 900ms var(--ease-expo), filter 900ms var(--ease-expo);
+}
+.city-card:hover .city-card__media img,
+.landmark:hover .landmark__media img,
+.wonder:hover img {
+  transform: scale(1.06);
+}
+.city-card__media img { filter: saturate(0.98); }
+.city-card:hover .city-card__media img { filter: saturate(1.08); }
+
+/* Spotlight cards (dishes, culture) get a soft lift ------------------------ */
+.js .spotlight {
+  transition: transform 550ms var(--ease-expo), box-shadow 550ms var(--ease-expo);
+}
+.js .spotlight:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.55);
+}
+
+/* Wonders: caption slide-up on hover ---------------------------------------- */
+.wonder figcaption { transition: transform 500ms var(--ease-expo); }
+.wonder:hover figcaption { transform: translateY(-2px); }
+.wonder:hover strong { color: var(--gold); }
+.wonder strong { transition: color 400ms var(--ease-out); }
+
+/* Button shine sweep (primary) + gold border glow (ghost) ------------------ */
+.btn { overflow: hidden; position: relative; }
+.btn--primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: skewX(-18deg);
+  transition: left 650ms var(--ease-expo);
+  pointer-events: none;
+}
+.btn--primary:hover::before { left: 135%; }
+.btn--primary { transition: background 300ms var(--ease-out); }
+.btn--primary:hover { background: #e2b876; }
+
+.btn--ghost { transition: border-color 300ms var(--ease-out), color 300ms var(--ease-out), background 300ms var(--ease-out); }
+.btn--ghost:hover { background: rgba(212, 162, 89, 0.08); }
+
+/* Underline sweep on nav + footer links ------------------------------------ */
+.nav__menu a,
+.site-footer__links a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition: background-size 420ms var(--ease-expo), color 300ms var(--ease-out);
+  padding-bottom: 2px;
+}
+.nav__menu a:hover,
+.site-footer__links a:hover { background-size: 100% 1px; }
+
+/* Chips: hover border + text lift ------------------------------------------ */
+.chips li { transition: border-color 300ms var(--ease-out), background 300ms var(--ease-out); }
+.chips li:hover { border-color: var(--gold); background: rgba(212, 162, 89, 0.07); }
+
+/* "Discover +" expander: plus icon rotates open ----------------------------- */
+.link-more svg { transition: transform 380ms var(--ease-expo); }
+.link-more:hover svg { transform: scale(1.15); }
+.link-more[aria-expanded="true"] svg { transform: rotate(45deg); }
+/* Reduced motion: freeze every transition layer --------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal-image],
+  .js [data-reveal-image] img { transition: none; }
+  .js .spotlight:hover { transform: none; box-shadow: none; }
+  .btn--primary::before { display: none; }
+}

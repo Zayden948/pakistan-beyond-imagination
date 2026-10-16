@@ -1,0 +1,76 @@
+/** i18n part 1 — global, nav, hero, discover, cities head + Lahore card. */
+export const UI1 = {
+  // ---------- global / nav ----------
+  skip:              { fr: "Aller au contenu", ur: "مواد پر جائیں" },
+  'brand.tag':       { fr: "Au-delà de l'imaginaire", ur: "تخیل سے آگے" },
+  'nav.discover':    { fr: "Découvrir", ur: "دریافت کریں" },
+  'nav.cities':      { fr: "Villes", ur: "شہر" },
+  'nav.landmarks':   { fr: "Monuments", ur: "یادگار" },
+  'nav.wonders':     { fr: "Merveilles", ur: "عجائبات" },
+  'nav.history':     { fr: "Histoire", ur: "تاریخ" },
+  'nav.culture':     { fr: "Culture", ur: "ثقافت" },
+  'nav.cuisine':     { fr: "Gastronomie", ur: "کھانے" },
+  'nav.cta':         { fr: "Commencer le voyage", ur: "سفر کا آغاز کریں" },
+  'aria.menu':       { fr: "Menu", ur: "مینو" },
+  'aria.lang':       { fr: "Choisir la langue", ur: "زبان منتخب کریں" },
+  'aria.menuOpen':   { fr: "Ouvrir le menu", ur: "مینو کھولیں" },
+  'aria.menuClose':  { fr: "Fermer le menu", ur: "مینو بند کریں" },
+  'nav.regions':     { fr: "Régions", ur: "علاقے" },
+  'aria.timeline':   { fr: "Ères historiques", ur: "تاریخی ادوار" },
+  'aria.regions':    { fr: "Régions du Pakistan", ur: "پاکستان کے علاقے" },
+
+  // ---------- meta ----------
+  'meta.title': { fr: "Pakistan — Au-delà de l'imaginaire | Voyage & Culture",
+                  ur: "پاکستان — تخیل سے آگے | سفر اور ثقافت" },
+  'meta.desc':  { fr: "Découvrez le Pakistan — là où l'histoire rencontre l'extraordinaire. Un voyage cinématographique à travers ses villes, montagnes, monuments, cultures et cuisine.",
+                  ur: "پاکستان دریافت کریں — جہاں تاریخ حیرت سے ملاقات کرتی ہے۔ اس کے شہروں، پہاڑوں، یادگاروں، ثقافتوں اور کھانوں کا سینمائی سفر۔" },
+
+  // ---------- hero ----------
+  'hero.eyebrow': { fr: "Chapitre 01 — Le départ", ur: "باب 01 — سفر کا آغاز" },
+  'hero.tagline': { fr: "Là où l'histoire rencontre l'extraordinaire.", ur: "جہاں تاریخ غیر معمولی سے ملاقات کرتی ہے۔" },
+  'hero.intro':   { fr: "Des glaciers du Karakoram aux rives de la mer d'Arabie — un pays de villes vieilles de cinq mille ans, de mosquées de marbre et de vallées creusées par l'Indus. Un pays, mille histoires.",
+                    ur: "قراقرم کے گلیشیئروں سے بحیرۂ عرب کے ساحلوں تک — پانچ ہزار سال پرانے شہروں، سنگِ مرمر کی مسجدوں اور سندھ کی کھدی ہوئی وادیوں کی سرزمین۔ ایک ملک، ہزار کہانیاں۔" },
+  'hero.cta1':    { fr: "Explorez le Pakistan", ur: "پاکستان دریافت کریں" },
+  'hero.cta2':    { fr: "Découvrez la terre", ur: "سرزمین کو جانیں" },
+  'hero.credit':  { fr: "Vallée de Hunza · Gilgit-Baltistan", ur: "وادیٔ ہنزہ · گلگت بلتستان" },
+
+  // ---------- discover ----------
+  'disc.eyebrow': { fr: "02 — Repères", ur: "02 — تعارف" },
+  'disc.title':   { fr: "À la rencontre de la terre de l'Indus", ur: "سندھ کی سرزمین سے ملاقات" },
+  'disc.lede':    { fr: "Blotti entre l'Asie du Sud et l'Asie centrale, le Pakistan est l'un des plus anciens carrefours de l'humanité — marchands, moines, empereurs et armées y ont suivi l'Indus et la route de la Soie, et leurs traces demeurent dans la brique, le marbre et le chant.",
+                    ur: "جنوبی اور وسطی ایشیا کے درمیان گرا ہوا، پاکستان انسانی تاریخ کے قدیم ترین سنگموں میں سے ایک ہے — تاجر، راہب، بادشاہ اور فوجیں یہاں سندھ اور شاہراہ ریشم کی راہ چلیں، اور ان کے نقش آج بھی اینٹوں، سنگِ مرمر اور گیتوں میں برقرار ہیں۔" },
+  'disc.geo':     { fr: "<strong>Géographie.</strong> Cinq grandes chaînes de montagnes s'y rencontrent — l'Himalaya, le Karakoram <em>(terre du K2, deuxième sommet du monde)</em>, l'Hindu Kush, le Sulaiman et la Salt Range — tandis que l'Indus porte leurs eaux sur 3,180&nbsp;km jusqu'à la mer d'Arabie.",
+                    ur: "<strong>جغرافیہ۔</strong> پانچ بڑے سلسلے یہاں ملتے ہیں — ہمالیہ، قراقرم <em>(جہاں K2، دنیا کا دوسرا بلند ترین پہاڑ، کھڑا ہے)</em>، ہندو کش، سلیمان اور سلٹ رینج — جبکہ دریائے سندھ ان کا پانی 3,180&nbsp;کلومیٹر کا سفر کر کے بحیرۂ عرب تک پہنچاتا ہے۔" },
+  'disc.peoples': { fr: "<strong>Peuples &amp; langues.</strong> Plus de 240&nbsp;millions de personnes des communautés pendjabi, sindhi, pachtoune, baloutche, cachemirie et hunza parlent plus de soixante-dix langues, de l'ourdou et du pendjabi au balti et au shina.",
+                    ur: "<strong>قومیں اور زبانیں۔</strong> 240&nbsp;ملین سے زائد لوگ — پنجابی، سندھی، پشتون، بلوچ، کشمیری اور ہنزہ کی قومیں — ستر سے زائد زبانیں بولتے ہیں، اردو اور پنجابی سے لے کر بلتی اور شینا تک۔" },
+  'disc.land':    { fr: "<strong>Paysages.</strong> Dunes de désert, prairies alpines, lacs turquoise, côtes de mangroves et glaciers — le K2, le haut plateau du Deosai, le lac d'Attabad et le désert du Thar partagent une même frontière.",
+                    ur: "<strong>مناظر۔</strong> صحرا کی ریت، پہاڑی گھاٹیاں، فیروزی جھیلیں، ساحلی دلدل اور گلیشیئر — K2، دوسائی کا اونچا سطح مرتفع، اٹا آباد کی جھیل اور صحرائے تھر سب ایک سرحد میں سمٹے ہیں۔" },
+  'disc.histw':   { fr: "<strong>Poids de l'histoire.</strong> Le plus ancien village agricole sédentaire connu (Mehrgarh), les cités de la vallée de l'Indus, les universités bouddhiques gandhariennes, la Lahore moghole et l'indépendance de 1947 de l'un des plus grands pays du monde — tout est arrivé ici.",
+                    ur: "<strong>تاریخی اہمیت۔</strong> قدیم ترین معروف کھیتی باڑی کا گاؤں (مہرگڑھ)، وادیٔ سندھ کے شہر، گندھارا کے بدھ یونیورسٹیاں، مغلوں کا لاہور اور 1947 کی آزادی — دنیا کے بڑے ملکوں میں سے ایک کی — سب یہیں واقع ہوئی۔" },
+
+  'stats.ari':     { fr: "Chiffres clés", ur: "اہم اعداد" },
+  'stats.pop':     { fr: "Population", ur: "آبادی" },
+  'stats.popn':    { fr: "L'une des cinq nations les plus peuplées du monde", ur: "دنیا کے پانچ سب سے زیادہ آبادی والے ملکوں میں سے ایک" },
+  'stats.lang':    { fr: "Langues", ur: "زبانیں" },
+  'stats.langn':   { fr: "Langues vivantes, de l'ourdou au balti", ur: "زندہ زبانیں، اردو سے بلتی تک" },
+  'stats.unesco':  { fr: "Sites UNESCO", ur: "یونیسکو کے مقامات" },
+  'stats.unescon': { fr: "Trésors du patrimoine mondial", ur: "عالمی ثقافتی ورثے کے خزانے" },
+  'stats.peak':    { fr: "Plus haut sommet", ur: "بلند ترین چوٹی" },
+  'stats.peakn':   { fr: "Le K2, trône du Karakoram", ur: "K2، قراقرم کا تخت" },
+
+  // ---------- cities head + Lahore ----------
+  'city.eyebrow': { fr: "03 — La mosaïque urbaine", ur: "03 — شہروں کا نقش و نگار" },
+  'city.title':   { fr: "Des villes incroyables", ur: "حیرت انگیز شہر" },
+  'city.lead':    { fr: "Sept mondes dans un même pays — chacun porte son accent, son artisanat et son horizon.", ur: "ایک ملک، سات الگ دنیائیں — ہر ایک اپنی آواز، اپنا دستور اور اپنا افق رکھتی ہے۔" },
+
+  'city.lah.k':     { fr: "Pendjab · capitale culturelle", ur: "پنجاب · ثقافتی دارالحکومت" },
+  'city.lah.n':     { fr: "Lahore", ur: "لاہور" },
+  'city.lah.d':     { fr: "Dômes moghols au-dessus d'arcades coloniales, bazars qui ne dorment jamais et jardins édifiés pour des empereurs — Lahore est le cœur battant du Pakistan.",
+                      ur: "مغلیہ گنبد، نوآبادیاتی عہد کی راہداریاں، کبھی نہ سونے والے بازار اور بادشاہوں کے لیے بنائے گئے باغات — لاہور پاکستان کا دھڑکتا ہوا دل ہے۔" },
+  'city.lah.chips': { fr: "<li>Mosquée Badshahi</li><li>Fort de Lahore</li><li>Ville fortifiée</li><li>Bâgh Shalimar</li>",
+                      ur: "<li>مسجد بادشاہی</li><li>قلعہ لاہور</li><li>اندرونِ شہر</li><li>باغِ شالیمار</li>" },
+  'city.lah.btn':   { fr: "Découvrir Lahore", ur: "لاہور دیکھیں" },
+  'city.lah.m1':    { fr: "Traversez la ville fortifiée depuis la porte de Delhi jusqu'à la mosquée de Wazir Khan, puis montez au Sheesh Mahal du Fort — une salle des miroirs bâtie pour Shah Jahan. Au crépuscule, la Badshahi Mosquée se pare d'or et tout le vieux quartier descend manger le long de la rue des saveurs à Fort Road.",
+                      ur: "دروازہ دہلی سے اندرونِ شہر میں چلیں، مسجد وزیر خان سے گزریں، پھر سیش محل تک اوپر جائیں — شاہ جہاں کے لیے بنے ہوئے آئینوں کا دالان۔ شام کے وقت بادشاہی مسجد سنہری چمک اٹھتی ہے اور پرانا محلہ راہِ قلعہ کے کھانوں کے بازار میں اکٹھا ہوتا ہے۔" },
+  'city.lah.m2':    { fr: "<em>Idéal d'octobre à mars.</em>", ur: "<em>اکتوبر سے مارچ تک بہترین۔</em>" },
+};

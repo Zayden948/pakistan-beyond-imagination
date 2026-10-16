@@ -1,0 +1,303 @@
+{
+  "hero": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hunza_Valley_HDR.jpg/1280px-Hunza_Valley_HDR.jpg",
+    "alt": "Valley in Pakistan-administered Gilgit-Baltistan",
+    "width": 3000,
+    "height": 1989,
+    "pageTitle": "Hunza_Valley"
+  },
+  "heroFallback": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Attabad.jpg/1280px-Attabad.jpg",
+    "alt": "Lake in Hunza Valley, Gilgit-Baltistan",
+    "width": 3264,
+    "height": 2448,
+    "pageTitle": "Attabad_Lake"
+  },
+  "badshahi": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Badshahi_Mosque_front_picture.jpg/1280px-Badshahi_Mosque_front_picture.jpg",
+    "alt": "Mughal-era mosque in Lahore, Pakistan",
+    "width": 2592,
+    "height": 1728,
+    "pageTitle": "Badshahi_Mosque"
+  },
+  "cityIslamabad": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Faisal_Mosque%2C_Islamabad_III.jpg/1280px-Faisal_Mosque%2C_Islamabad_III.jpg",
+    "alt": "Capital of Pakistan",
+    "width": 4618,
+    "height": 3464,
+    "pageTitle": "Islamabad"
+  },
+  "cityLahore": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lahore_Fort_view_from_Baradari.jpg/1280px-Lahore_Fort_view_from_Baradari.jpg",
+    "alt": "Capital of Punjab, Pakistan",
+    "width": 1626,
+    "height": 1191,
+    "pageTitle": "Lahore"
+  },
+  "cityKarachi": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Clifton_Karachi_View.jpg/1280px-Clifton_Karachi_View.jpg",
+    "alt": "Capital of Sindh, Pakistan",
+    "width": 1284,
+    "height": 690,
+    "pageTitle": "Karachi"
+  },
+  "cityPeshawar": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Islamia_College_Peshawar_%28Public_Sector_University%29%2C_Khyber_Pakhtunkhwa%2C_Pakistan_cropped.jpg/1280px-Islamia_College_Peshawar_%28Public_Sector_University%29%2C_Khyber_Pakhtunkhwa%2C_Pakistan_cropped.jpg",
+    "alt": "Capital of Khyber Pakhtunkhwa, Pakistan",
+    "width": 2725,
+    "height": 1356,
+    "pageTitle": "Peshawar"
+  },
+  "cityMultan": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shrine_Shah_Rukn-e-Alam.jpg/1280px-Shrine_Shah_Rukn-e-Alam.jpg",
+    "alt": "City in Punjab, Pakistan",
+    "width": 1600,
+    "height": 1199,
+    "pageTitle": "Multan"
+  },
+  "cityHunza": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hunza_Valley_HDR.jpg/1280px-Hunza_Valley_HDR.jpg",
+    "alt": "Valley in Pakistan-administered Gilgit-Baltistan",
+    "width": 3000,
+    "height": 1989,
+    "pageTitle": "Hunza_Valley"
+  },
+  "citySkardu": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Shangrila_resort_skardu.jpg/1280px-Shangrila_resort_skardu.jpg",
+    "alt": "City in Gilgit-Baltistan, Pakistan-administered Kashmir",
+    "width": 4628,
+    "height": 3264,
+    "pageTitle": "Skardu"
+  },
+  "lmBadshahi": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Badshahi_Mosque_front_picture.jpg/1280px-Badshahi_Mosque_front_picture.jpg",
+    "alt": "Mughal-era mosque in Lahore, Pakistan",
+    "width": 2592,
+    "height": 1728,
+    "pageTitle": "Badshahi_Mosque"
+  },
+  "lmFaisal": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ali_Mujtaba_WLM2017_FAISAL_MOSQUE_019.jpg/1280px-Ali_Mujtaba_WLM2017_FAISAL_MOSQUE_019.jpg",
+    "alt": "World's sixth-largest mosque in Islamabad, Pakistan",
+    "width": 5392,
+    "height": 3392,
+    "pageTitle": "Faisal_Mosque"
+  },
+  "lmLahoreFort": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lahore_Fort_view_from_Baradari.jpg/1280px-Lahore_Fort_view_from_Baradari.jpg",
+    "alt": "Citadel in Lahore, Pakistan",
+    "width": 1626,
+    "height": 1191,
+    "pageTitle": "Lahore_Fort"
+  },
+  "lmMinar": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Minar_e_Pakistan_2021.jpg/1280px-Minar_e_Pakistan_2021.jpg",
+    "alt": "Monument in Lahore, Pakistan",
+    "width": 1217,
+    "height": 1624,
+    "pageTitle": "Minar-e-Pakistan"
+  },
+  "lmPakistanMonument": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Blue_Hour_at_Pakistan_Monument.jpg/1280px-Blue_Hour_at_Pakistan_Monument.jpg",
+    "alt": "National monument in Islamabad, Pakistan",
+    "width": 6000,
+    "height": 4000,
+    "pageTitle": "Pakistan_Monument"
+  },
+  "lmMohenjoDaro": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Mohenjodaro_-_view_of_the_stupa_mound.JPG/1280px-Mohenjodaro_-_view_of_the_stupa_mound.JPG",
+    "alt": "Archaeological site in Sindh, Pakistan",
+    "width": 3648,
+    "height": 2736,
+    "pageTitle": "Mohenjo-daro"
+  },
+  "lmRohtas": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Kabuli_Gate_-_Rohtas_Fort_by_Usman_Ghani.jpg/1280px-Kabuli_Gate_-_Rohtas_Fort_by_Usman_Ghani.jpg",
+    "alt": "Historical fort in Dina, Pakistan",
+    "width": 3008,
+    "height": 2000,
+    "pageTitle": "Rohtas_Fort"
+  },
+  "lmMakli": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Nizam_al-Din_Tomb%2C_Makli_Hill%2C_Sindh..jpg/1280px-Nizam_al-Din_Tomb%2C_Makli_Hill%2C_Sindh..jpg",
+    "alt": "Funerary site in Sindh,",
+    "width": 7360,
+    "height": 4912,
+    "pageTitle": "Makli_Necropolis"
+  },
+  "nwFairyMeadows": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Nanga_Parbat_The_Killer_Mountain.jpg/1280px-Nanga_Parbat_The_Killer_Mountain.jpg",
+    "alt": "Grassland area in Pakistan",
+    "width": 5190,
+    "height": 4701,
+    "pageTitle": "Fairy_Meadows"
+  },
+  "nwDeosai": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Deosai_pic_hd.jpg/1280px-Deosai_pic_hd.jpg",
+    "alt": "National park in Gilgit Baltistan, Pakistan",
+    "width": 5097,
+    "height": 3398,
+    "pageTitle": "Deosai_National_Park"
+  },
+  "nwAttabad": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Attabad.jpg/1280px-Attabad.jpg",
+    "alt": "Lake in Hunza Valley, Gilgit-Baltistan",
+    "width": 3264,
+    "height": 2448,
+    "pageTitle": "Attabad_Lake"
+  },
+  "nwNangaParbat": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Fairy_Meadows_and_the_view_of_Nanga_Parbat.jpg/1280px-Fairy_Meadows_and_the_view_of_Nanga_Parbat.jpg",
+    "alt": "9th-highest mountain on Earth",
+    "width": 2048,
+    "height": 1334,
+    "pageTitle": "Nanga_Parbat"
+  },
+  "nwK2": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Chogori.jpg/1280px-Chogori.jpg",
+    "alt": "2nd-highest mountain on Earth",
+    "width": 4000,
+    "height": 3000,
+    "pageTitle": "K2"
+  },
+  "nwNeelum": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Neelum_Valley%2C_Azad_Jammu_%26_Kashmir%2C_Pakistan.jpg/1280px-Neelum_Valley%2C_Azad_Jammu_%26_Kashmir%2C_Pakistan.jpg",
+    "alt": "District of Azad Kashmir, Pakistan",
+    "width": 6000,
+    "height": 4000,
+    "pageTitle": "Neelum_Valley"
+  },
+  "nwSwat": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/River_Swat_Pakistan_3.jpg/1280px-River_Swat_Pakistan_3.jpg",
+    "alt": "River in Khyber Pakhtunkhwa, Pakistan",
+    "width": 3036,
+    "height": 1856,
+    "pageTitle": "Mahodand_Lake"
+  },
+  "foodBiryani": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sindhi_Biryani.JPG/1280px-Sindhi_Biryani.JPG",
+    "alt": "Sindhi rice cuisine from Pakistan",
+    "width": 2816,
+    "height": 2112,
+    "pageTitle": "Sindhi_biryani"
+  },
+  "foodNihari": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Nalli_Nihari_India.jpg/1280px-Nalli_Nihari_India.jpg",
+    "alt": "Meat stew from South Asia",
+    "width": 2048,
+    "height": 1598,
+    "pageTitle": "Nihari"
+  },
+  "foodKarahi": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Wok-and-karahi-2.jpg/1280px-Wok-and-karahi-2.jpg",
+    "alt": "Type of thick, circular, and deep pan",
+    "width": 1588,
+    "height": 776,
+    "pageTitle": "Karahi"
+  },
+  "foodSeekhKebab": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Pakistani_Food_Beef_Kabobs.jpg/1280px-Pakistani_Food_Beef_Kabobs.jpg",
+    "alt": "Type of skewered kebab",
+    "width": 3872,
+    "height": 2592,
+    "pageTitle": "Seekh_kabab"
+  },
+  "foodChapliKebab": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Chapli_Kebab.jpg/1280px-Chapli_Kebab.jpg",
+    "alt": "Pashtun-style minced kebab eaten throughout South Asia",
+    "width": 4592,
+    "height": 2576,
+    "pageTitle": "Chapli_Kebab"
+  },
+  "foodHaleem": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Pakistani_Haleem_served_with_garnish.jpg/1280px-Pakistani_Haleem_served_with_garnish.jpg",
+    "alt": "Type of stew",
+    "width": 4368,
+    "height": 2912,
+    "pageTitle": "Haleem"
+  },
+  "foodSajji": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sajji.JPG/1280px-Sajji.JPG",
+    "alt": "Foodstuff",
+    "width": 2816,
+    "height": 2112,
+    "pageTitle": "Sajji"
+  },
+  "foodParatha": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Triangle_paratha_%28cropped%29.JPG/1280px-Triangle_paratha_%28cropped%29.JPG",
+    "alt": "Flatbread from South Asia",
+    "width": 2848,
+    "height": 2846,
+    "pageTitle": "Paratha"
+  },
+  "cultureTruck": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Pakistani_truck.jpg/1280px-Pakistani_truck.jpg",
+    "alt": "Decorated trucks in the Indian subcontinent",
+    "width": 3648,
+    "height": 2736,
+    "pageTitle": "Truck_art_in_Pakistan"
+  },
+  "cultureQawwali": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Qawalli_at_Ajmer_Sharif_dargah.jpg/1280px-Qawalli_at_Ajmer_Sharif_dargah.jpg",
+    "alt": "Sufi devotional music from South Asia",
+    "width": 4117,
+    "height": 2317,
+    "pageTitle": "Qawwali"
+  },
+  "cultureShalwar": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Schoolgirls_in_Shalwar_Kameez%2C_Abbotabad_Pakistan_-_UK_International_Development.jpg/1280px-Schoolgirls_in_Shalwar_Kameez%2C_Abbotabad_Pakistan_-_UK_International_Development.jpg",
+    "alt": "Trousers and tunic worn in South Asia",
+    "width": 2500,
+    "height": 1666,
+    "pageTitle": "Shalwar_kameez"
+  },
+  "cultureCricket": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pakistan_cricket_team_logo.png/1280px-Pakistan_cricket_team_logo.png",
+    "alt": "National sports team",
+    "width": 288,
+    "height": 264,
+    "pageTitle": "Pakistan_cricket_team"
+  },
+  "cultureIndus": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Indus_Valley_Civilization%2C_Mature_Phase_%282600-1900_BCE%29.png/1280px-Indus_Valley_Civilization%2C_Mature_Phase_%282600-1900_BCE%29.png",
+    "alt": "Bronze Age civilisation in South Asia",
+    "width": 900,
+    "height": 733,
+    "pageTitle": "Indus_Valley_Civilisation"
+  },
+  "cultureAltit": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Altit_fort-gb.jpg/1280px-Altit_fort-gb.jpg",
+    "alt": "Historic site in Gilgit-Baltistan, Pakistan",
+    "width": 6016,
+    "height": 4016,
+    "pageTitle": "Altit_Fort"
+  },
+  "cultureShandur": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Shandur-Polo-Festivals_kahtours.jpg/1280px-Shandur-Polo-Festivals_kahtours.jpg",
+    "alt": "Annual sports festival held in Pakistan",
+    "width": 720,
+    "height": 419,
+    "pageTitle": "Shandur_Polo_Festival"
+  },
+  "cultureBaltit": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Baltit_fort%2C_Hunza_Valley.jpg/1280px-Baltit_fort%2C_Hunza_Valley.jpg",
+    "alt": "Fort in Pakistan",
+    "width": 4608,
+    "height": 3456,
+    "pageTitle": "Baltit_Fort"
+  },
+  "flag": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/1280px-Flag_of_Pakistan.svg.png",
+    "alt": "Flag of Pakistan",
+    "width": 900,
+    "height": 600,
+    "pageTitle": "Pakistan"
+  },
+  "regionBalochistan": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Hingool_Nationa_Park_and_Makran_Coastal_Highway.jpg/1280px-Hingool_Nationa_Park_and_Makran_Coastal_Highway.jpg",
+    "alt": "Makran Coastal Highway through Hingol National Park, Balochistan",
+    "width": 6000,
+    "height": 4000,
+    "pageTitle": "Hingol_National_Park"
+  }
+}
