@@ -3,7 +3,7 @@
 A premium editorial one-page experience celebrating Pakistan — its cities, landmarks, natural
 wonders, history, culture and cuisine. Built to feel like a cinematic magazine, not a template.
 
-**🌐 Live site:** _[GitHub Pages URL will appear here once deployed]_
+**🌐 Live site:** https://zayden948.github.io/pakistan-beyond-imagination/
 
 ## Highlights
 
