@@ -131,7 +131,7 @@ export function initTimeline() {
   const panel = document.getElementById('era-panel');
   if (!tabs.length || !panel) return;
 
-  const setEra = (index, { focusTab = false } = {}) => {
+  const setEra = (index, { focusTab = false, scrollTab = true } = {}) => {
     const era = localized(index);
     const tab = tabs[index];
     if (!era || !tab) return;
@@ -155,7 +155,9 @@ export function initTimeline() {
     panel.querySelector('.timeline__facts').innerHTML =
       era.facts.map((fact) => `<li>${fact}</li>`).join('');
 
-    tab.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+    // Only bring the tab into view on user interaction — at init this would
+    // scroll the whole page down to the history section on load.
+    if (scrollTab) tab.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
     if (focusTab) tab.focus();
   };
 
@@ -180,8 +182,8 @@ export function initTimeline() {
 
   document.addEventListener('langchange', () => {
     const active = current() === -1 ? 0 : current();
-    setEra(active);
+    setEra(active, { scrollTab: false });
   });
 
-  setEra(0); // sync the markup with data
+  setEra(0, { scrollTab: false }); // sync the markup with data
 }
